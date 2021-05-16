@@ -1,5 +1,5 @@
 #!/bin/bash
-# input--Verifies that a specified programis either valid as is
+# input--Verifies that a specified program is either valid as is
 # or can be found in the PATH directory list
 
 in_path()
@@ -42,7 +42,7 @@ if [ $# -ne 1 ] ; then
   exit 1
 fi
 
-# Uncomment to run as standalone script
+# Uncomment the following to run as standalone script.
 # checkForCmdInPath "$1"
 # case $? in
 #   0 ) echo "$1 found in PATH"			;;
