@@ -36,7 +36,7 @@ nicenumber()
   nicenum="${thousands}${result}"
   if [ ! -z $2 ] ; then
     echo $nicenum
-  if
+  fi
 }
 
 DD="."  # Decimal point delimiter, to separate whole and fractional values
