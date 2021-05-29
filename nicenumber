@@ -35,7 +35,7 @@ nicenumber()
 
   nicenum="${thousands}${result}"
   if [ ! -z $2 ] ; then
-    echo $nicenumb
+    echo $nicenum
   if
 }
 
