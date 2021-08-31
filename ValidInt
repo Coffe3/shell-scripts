@@ -7,7 +7,7 @@ validInt()
   #   max value $3 if they are supplied. If the value isn't within range
   #   or it's not composed of just digits, fail.
 
-  number="$1";      min'"$2";     max="$3"
+  number="$1";      min"$2";     max="$3"
 
   if [ -z $number ] ; then
     echo "You didn't enter anything. Please enter a number." >&2
@@ -38,6 +38,7 @@ validInt()
   fi
   if [ ! -z $max ] ; then
     # Is the input greater than the maximum value?
+
     if [ "$number" -gt "$max" ] ; then
       echo "Your value is too big: largest acceptable value is $max." >&2
       return 1
