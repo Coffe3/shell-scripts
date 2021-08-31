@@ -7,7 +7,7 @@ validInt()
   #   max value $3 if they are supplied. If the value isn't within range
   #   or it's not composed of just digits, fail.
 
-  number="$1";      min"$2";     max="$3"
+  number="$1";      min="$2";     max="$3"
 
   if [ -z $number ] ; then
     echo "You didn't enter anything. Please enter a number." >&2
@@ -46,3 +46,8 @@ validInt()
   fi
   return 0
 }
+
+# Input validation
+if validInt "$1" "$2" "$3" ; then
+  echo "Input is a valid integer within your constraints."
+fi
