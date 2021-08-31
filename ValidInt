@@ -39,7 +39,7 @@ validInt()
   if [ ! -z $max ] ; then
     # Is the input greater than the maximum value?
     if [ "$number" -gt "$max" ] ; then
-      echo "Your value is too big: largest acceptable value is $max." >&2
+      echo "Your value is too big: largest acceptable value is $max" >&2
       return 1
     fi
   fi
